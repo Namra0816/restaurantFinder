@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import './restaurantList.css';
 
 function RestaurantList({ restaurants }) {
   const { city, state } = useParams();
@@ -15,7 +16,7 @@ function RestaurantList({ restaurants }) {
   );
 
   return (
-    <div className="restaurant-list">
+    <div className="container restaurant-list">
       <h2>Restaurants in {capitalize(city)}, {capitalize(state)}</h2>
       <ul>
         {filteredRestaurants.map(restaurant => (
