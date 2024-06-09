@@ -1,11 +1,24 @@
 import React, {useState} from 'react'
+import {FaBars, FaTimes} from 'react-icons/fa'
 import logo from '../../assets/logo.png'
 
 import {Link, NavLink} from 'react-router-dom'
 
+import './Navbar.css'
+
 const Navbar = () => {
 
   const [click, setClick] = useState(false);
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+    if(window.scrollY >= 100) {
+      setColor(true)
+    } else {
+      setColor(false)
+    }
+  }
+
+  window.addEventListener("scroll", changeColor);
 
 
   const handleClick = () => {
@@ -13,6 +26,7 @@ const Navbar = () => {
   }
 
   return (
+    <div className={color ? "header header-bg" : 'header'}>
       <div className='container'>
         <div className='nav-bar'>
           <Link to="/">
@@ -32,8 +46,19 @@ const Navbar = () => {
               <NavLink className = "nav-link" to="/contact">Contact</NavLink>
             </li>
           </ul>
+
+          <div className='hamburger'onClick={handleClick}>
+
+              {click ? (
+                <FaTimes size={20} style={{color:"#fff"}} /> 
+              ) : (
+                <FaBars size={20} style={{color:"#fff"}}/>
+              )}
+              
+            </div>
         </div> 
       </div>
+    </div>
   )
 }
 
