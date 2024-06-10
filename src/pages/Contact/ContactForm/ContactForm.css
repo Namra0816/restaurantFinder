@@ -1,0 +1,64 @@
+.contact-content h1 {
+    padding-top: 110px;
+    padding-bottom: 20px;
+    
+}
+
+.heading-secondary {
+    font-size: 38px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+.heading-secondary span {
+    font-weight: 600;
+}
+
+.form-field {
+    padding-bottom: 20px;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 20px;
+}
+
+.form-field textarea {
+    height: 200px;
+}
+
+.form-field label {
+    font-size: 16px;
+}
+
+form .name-email {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+form .name-email div {
+    width: 50%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+
