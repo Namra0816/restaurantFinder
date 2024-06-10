@@ -57,7 +57,7 @@ const SearchBar = () => {
       </div>
       {filteredData.length !== 0 && (
         <div className="dataResult">
-          {filteredData.slice(0, 15).map((value, key) => {
+          {filteredData.map((value, key) => {
             return (
               <div key={key} className="dataItem" onClick={() => {
                 setWordEntered(`${value.city}, ${value.state}`);
