@@ -37,10 +37,6 @@ const Navbar = () => {
             <li onClick={handleClick}>
               <NavLink className = "nav-link" to="/">Home</NavLink>
             </li>
-
-            <li onClick={handleClick}>
-              <NavLink className = "nav-link" to="/about">About</NavLink>
-            </li>
             
             <li onClick={handleClick}>
               <NavLink className = "nav-link" to="/contact">Contact</NavLink>
