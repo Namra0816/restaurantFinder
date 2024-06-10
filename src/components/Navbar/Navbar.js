@@ -31,6 +31,7 @@ const Navbar = () => {
         <div className='nav-bar'>
           <Link to="/">
             <img src={logo} alt="logo" width={50} />
+            <span className="restaurant-name">DineDiscover</span>
           </Link>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
