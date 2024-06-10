@@ -8,11 +8,13 @@ import './searchBar.css';
 const SearchBar = () => {
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
 
   const handleFilter = (event) => {
     const searchWord = event.target.value;
     setWordEntered(searchWord);
+    setErrorMessage("");
 
     let uniqueEntries = {};
     const newFilter = restaurantData.filter((value) => {
@@ -30,12 +32,16 @@ const SearchBar = () => {
       setFilteredData([]);
     } else {
       setFilteredData(newFilter);
+      if (newFilter.length === 0) {
+        setErrorMessage("City/State not found. Please enter a correct city/state.");
+      }
     }
   };
 
   const clearInput = () => {
     setFilteredData([]);
     setWordEntered("");
+    setErrorMessage("");
   };
 
   return (
@@ -55,6 +61,11 @@ const SearchBar = () => {
           )}
         </div>
       </div>
+      {errorMessage && (
+        <div className="error-message">
+          <p>{errorMessage}</p>
+        </div>
+      )}
       {filteredData.length !== 0 && (
         <div className="dataResult">
           {filteredData.map((value, key) => {
