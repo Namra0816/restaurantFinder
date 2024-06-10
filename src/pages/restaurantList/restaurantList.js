@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './restaurantList.css';
 import Pagination from '../../components/pagination/pagination';
 
@@ -27,6 +28,10 @@ function RestaurantList({ restaurants }) {
 
   return (
     <div className="container restaurant-list">
+      <Helmet>
+        <title>Restaurants in {capitalize(city)}, {capitalize(state)} - DineDiscover</title>
+        <meta name="description" content={`Discover the best restaurants in ${capitalize(city)}, ${capitalize(state)}. Browse menus, reviews, and more.`} />
+      </Helmet>
       {filteredRestaurants.length > 0 ? (
         <>
           <h2>Restaurants in {capitalize(city)}, {capitalize(state)}</h2>
