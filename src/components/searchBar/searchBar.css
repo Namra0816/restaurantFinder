@@ -1,82 +1,93 @@
-  .search {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .searchInputs {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .search input {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 24px;
-    padding: 20px;
-    height: 50px;
-    width: 400px;
-  }
-  
-  .searchIcon {
-    height: 70px;
-    width: 60px;
-    background-color: white;
-    display: grid;
-    place-items: center;
-  }
-  
-  input:focus {
-    outline: none;
-  }
-  
-  .searchIcon svg {
-    font-size: 40px;
-  }
-  
-  .dataResult {
-    margin-top: 5px;
-    width: 400px;
-    max-height: 200px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    overflow-y: auto;
-    margin-right: 58px;
-  }
-  
-  .dataResult::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .dataResult .dataItem {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    color: black;
-    cursor: pointer;
-  }
-  
-  .dataItem p {
-    margin-left: 10px;
-  }
-  
-  .dataItem:hover {
-    background-color: lightgrey;
-  }
-  
-  .clearBtn {
-    cursor: pointer;
-  }
+/* Container for the search bar and results */
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the search bar and results */
+}
 
-  .error-message {
-    color: red;
-    font-size: 18px;
-    margin-top: 10px;
-    text-align: center;
-  }
-  
-  
+/* Container for the search input and icon */
+.searchInputs {
+  margin-top: 20px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+/* Styling for the search input */
+.search input {
+  background-color: white; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  font-size: 24px; 
+  padding: 20px; 
+  height: 50px; 
+  width: 400px; 
+}
+
+/* Container for the search icon */
+.searchIcon {
+  height: 70px; 
+  width: 60px; 
+  background-color: white; 
+  display: grid; 
+  place-items: center; 
+}
+
+/* Removing the default outline when the input is focused */
+input:focus {
+  outline: none;
+}
+
+/* Styling for the search icon SVG */
+.searchIcon svg {
+  font-size: 40px; 
+}
+
+/* Container for the search results */
+.dataResult {
+  margin-top: 5px; 
+  width: 400px; 
+  max-height: 200px; 
+  background-color: white; 
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+  overflow-y: auto; 
+  margin-right: 58px; 
+}
+
+/* Hiding the default scrollbar */
+.dataResult::-webkit-scrollbar {
+  display: none;
+}
+
+/* Styling for each search result item */
+.dataResult .dataItem {
+  width: 100%; 
+  height: 50px; 
+  display: flex; 
+  align-items: center; 
+  color: black; 
+  cursor: pointer; 
+}
+
+/* Styling for the paragraph inside each result item */
+.dataItem p {
+  margin-left: 10px; 
+}
+
+/* Hover effect for each result item */
+.dataItem:hover {
+  background-color: lightgrey; 
+}
+
+/* Styling for the clear button */
+.clearBtn {
+  cursor: pointer; 
+}
+
+/* Styling for the error message */
+.error-message {
+  color: red; 
+  font-size: 18px; 
+  margin-top: 10px; 
+  text-align: center; 
+}

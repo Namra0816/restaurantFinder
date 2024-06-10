@@ -1,42 +1,47 @@
+/* Container for pagination buttons, centering the buttons */
 .pagination-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin-top: 20px;
-  }
-  
-  .page-item {
-    padding: 10px 15px;
-    margin: 0 10px;
-    margin-bottom: 5px; 
-    border: 1px solid #ddd;
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-    font-size: 12px;
-  }
-  
-  .page-item:hover {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .page-item.active {
-    background-color: #0056b3;
-    color: white;
-    border-color: #004085;
-  }
-  
-  .page-item:disabled {
-    cursor: default;
-    opacity: 0.5;
-  }
-  
-  button:disabled:hover {
-    background-color: white;
-    color: black;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Styling for each page button */
+.page-item {
+  padding: 10px 15px;
+  margin: 0 10px;
+  margin-bottom: 5px; 
+  border: 1px solid #ddd;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color changes */
+  font-size: 12px;
+}
+
+/* Hover effect for page buttons */
+.page-item:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Styling for the active page button */
+.page-item.active {
+  background-color: #0056b3;
+  color: white;
+  border-color: #004085;
+}
+
+/* Styling for disabled page buttons */
+.page-item:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+/* Ensuring disabled buttons do not change style on hover */
+button:disabled:hover {
+  background-color: white;
+  color: black;
+}

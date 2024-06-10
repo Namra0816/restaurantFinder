@@ -1,64 +1,73 @@
+/* Styling for the heading in the contact content */
 .contact-content h1 {
-    padding-top: 110px;
-    padding-bottom: 20px;
-    
+    padding-top: 110px; 
+    padding-bottom: 20px; 
 }
 
+/* Secondary heading styling */
 .heading-secondary {
-    font-size: 38px;
-    font-weight: 300;
-    text-transform: uppercase;
-    line-height: 1.1;
-    text-align: center;
-  }
+    font-size: 38px; 
+    font-weight: 300; 
+    text-transform: uppercase; /* Transforming text to uppercase */
+    line-height: 1.1; /* Line height of the heading */
+    text-align: center; 
+}
 
+/* Span inside the secondary heading */
 .heading-secondary span {
-    font-weight: 600;
+    font-weight: 600; 
 }
 
+/* Styling for each form field */
 .form-field {
-    padding-bottom: 20px;
+    padding-bottom: 20px; 
 }
 
+/* Styling for input and textarea elements */
 .form-field input,
 .form-field textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    outline: none;
-    font-size: 20px;
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    outline: none; /* Removing default outline */
+    font-size: 20px; 
 }
 
+/* Specific styling for the textarea element */
 .form-field textarea {
-    height: 200px;
+    height: 200px; 
 }
 
+/* Styling for the labels in the form fields */
 .form-field label {
-    font-size: 16px;
+    font-size: 16px; 
 }
 
+/* Flexbox styling for name and email fields */
 form .name-email {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
 }
 
+/* Equal width for the name and email fields */
 form .name-email div {
-    width: 50%;
+    width: 50%; 
 }
 
+/* Styling for the submit button */
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    text-transform: capitalize;
-    font-weight: 600;
-    color: var(--color-white);
-    background-color: var(--color-primary);
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    opacity: 0.9;
-  }
+    padding: 10px 20px; 
+    font-size: 16px; 
+    text-transform: capitalize; 
+    font-weight: 600; 
+    color: var(--color-white); 
+    background-color: var(--color-primary); 
+    border: none; 
+    cursor: pointer; 
+}
 
+/* Hover effect for the submit button */
+button:hover {
+    opacity: 0.9; /* Slightly reducing the opacity on hover */
+}

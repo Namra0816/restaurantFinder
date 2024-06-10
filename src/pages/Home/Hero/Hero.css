@@ -1,14 +1,15 @@
+/* Styling for the hero content container */
 .hero-content {
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    text-align: center;
-    padding-top: 80px;
-  }
-  
-  .hero-content p {
-    font-size: 20px;
-  }
-  
+  position: absolute; 
+  top: 100px; 
+  left: 50%; 
+  transform: translateX(-50%); /* Adjusting for perfect centering */
+  width: 100%; 
+  text-align: center; 
+  padding-top: 80px; 
+}
+
+/* Styling for paragraphs within the hero content */
+.hero-content p {
+  font-size: 20px; 
+}
