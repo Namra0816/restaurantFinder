@@ -4,6 +4,7 @@ import Home from './pages/Home/Home';
 import Navbar from "../../restaurantFinder/src/components/Navbar/Navbar";
 import RestaurantList from './pages/restaurantList/restaurantList';
 import restaurantData from './assets/restaurantData/restaurantData.json';
+import Contact from './pages/Contact/Contact';
 
 function App() {
   const [restaurants] = useState(restaurantData);
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/:city/:state" element={<RestaurantList restaurants={restaurants} />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );
