@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
 import restaurantData from '../../assets/restaurantData/restaurantData.json';
+import './searchBar.css';
 
 const SearchBar = () => {
   const [filteredData, setFilteredData] = useState([]);
