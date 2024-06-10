@@ -1,10 +1,13 @@
 import React from 'react';
 import Hero from './Hero/Hero';
+import SearchBar from '../../components/searchBar/searchBar'; 
 
 const Home = () => {
   return (
     <div>
-      <Hero />
+      <Hero>
+        <SearchBar />
+      </Hero>
     </div>
   );
 };
