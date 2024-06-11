@@ -15,7 +15,7 @@ DineDiscover is a React-based web application that helps users find the best res
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/Namra0816/restaurantFinder
+   git clone https://github.com/Namra0816/restaurantFinder.git
    ```
 2. Navigate to the project directory:
    ```sh
