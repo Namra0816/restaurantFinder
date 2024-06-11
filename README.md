@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# DineDiscover - Restaurant Finder Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+DineDiscover is a React-based web application that helps users find the best restaurants in their city or state. The application includes dynamic city and state pages, pagination, and a contact page.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Home Page**: Includes a hero section with a search bar to find restaurants by city or state.
+- **Search Functionality**: Users can search for restaurants based on city or state, with suggestions and error handling for incorrect inputs.
+- **Dynamic Routing**: The application uses React Router to handle dynamic routes for different city and state combinations.
+- **Pagination**: Display a list of restaurants with pagination support to navigate through multiple pages.
+- **Contact Page**: A contact form for users to get in touch with the DineDiscover team.
+- **Helmet Integration**: Manage the document head to set titles and meta descriptions for better SEO.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Namra0816/restaurantFinder
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd restaurantFinder
+   ```
+3. Install the dependencies:
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   npm start
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+```plaintext
+restaurantFinder/
+│
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+│
+├── src/
+│   ├── assets/
+│   │   ├── restaurantData/
+│   │   │   └── restaurantData.json
+│   │   └── logo.png
+│   ├── components/
+│   │   ├── Navbar/
+│   │   │   ├── Navbar.css
+│   │   │   └── Navbar.js
+│   │   ├── pagination/
+│   │   │   ├── pagination.css
+│   │   │   └── pagination.js
+│   │   ├── searchBar/
+│   │   │   ├── searchBar.css
+│   │   │   └── searchBar.js
+│   ├── pages/
+│   │   ├── Contact/
+│   │   │   ├── Contact.js
+│   │   │   ├── ContactForm/
+│   │   │   │   ├── ContactForm.css
+│   │   │   │   └── ContactForm.js
+│   │   ├── Home/
+│   │   │   ├── Home.js
+│   │   │   ├── Hero/
+│   │   │   │   ├── Hero.css
+│   │   │   │   └── Hero.js
+│   │   └── restaurantList/
+│   │       ├── restaurantList.css
+│   │       └── restaurantList.js
+│   ├── App.js
+│   ├── index.css
+│   ├── index.js
+│
+└── package.json
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
+- **Home Page**: Enter a city or state in the search bar to find restaurants in that location.
+- **Restaurant List**: Browse the list of restaurants and use pagination to navigate through pages.
+- **Contact Page**: Fill out the contact form to send a message to the DineDiscover team.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
